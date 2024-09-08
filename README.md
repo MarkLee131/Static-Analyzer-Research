@@ -22,7 +22,7 @@ Feel free to make contribution to this repository (e.g., adding new papers) by o
 
 ## 2024
 
-### FSE
+### FSE 2024
 
 - [Static Application Security Testing Tools for Smart Contracts: How Far Are We?](https://doi.org/10.1145/3660772)
   - Kaixuan Li, Yue Xue, Sen Chen, Han Liu, Kairan Sun, Ming Hu, Haijun Wang, Yang Liu, and Yixiang Chen
@@ -66,7 +66,7 @@ USA, 13 pages. https://doi.org/10.1145/nnnnnnn.nnnnnnn.
 
 ## 2023
 
-### FSE
+### FSE 2023
 
 - [Comparison and Evaluation on Static Application Security Testing (SAST) Tools for Java](https://doi.org/10.1145/3611643.3616262)
   - Kaixuan Li, Sen Chen, Lingling Fan, Ruitao Feng, Han Liu, Chengwei Liu, Yang Liu, and Yixiang Chen
@@ -86,7 +86,7 @@ Kaixuan Li, Sen Chen, Lingling Fan, Ruitao Feng, Han Liu, Chengwei Liu, Yang Liu
 Huaien Zhang, Yu Pei, Junjie Chen, and Shin Hwei Tan. 2023. Statfier: Automated Testing of Static Analyzers via Semantic-Preserving Program Transformations. In Proceedings of the 31st ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering (ESEC/FSE 2023). Association for Computing Machinery, New York, NY, USA, 237–249. https://doi.org/10.1145/3611643.3616272.
 ```
 
-### ISSTA
+### ISSTA 2023
 
 - [A Comprehensive Study on Quality Assurance Tools for Java](https://doi.org/10.1145/3597926.3598056)
   - Han Liu, Sen Chen, Ruitao Feng, Chengwei Liu, Kaixuan Li, Zhengzi Xu, Liming Nie, Yang Liu, and Yixiang Chen
@@ -100,7 +100,22 @@ TODO: Add more papers
 
 ## 2022
 
-### ISSTA
+### FSE 2022
+
+### ISSTA 2022
+
+### ICPC 2022
+
+- [Find Bugs in Static Bug Finders](https://doi.org/10.1145/3524610.3527899)
+  - Junjie Wang, Yuchao Huang, Song Wang, Qing Wang
+  - Proc. ACM International Conference on Program Comprehension (ICPC 2022), 12 pages
+
+```
+Junjie Wang, Yuchao Huang, Song Wang, Qing Wang. 2021. Find Bugs in Static Bug Finders. In Proceedings of The 30th International Conference on Program Comprehension (ICPC 2022). ACM, New York, NY, USA, 12 pages. https://doi.org/10.1145/3524610.3527899.
+```
+
+
+Find Bugs in Static Bug Finders
 
 ## 2021
 
