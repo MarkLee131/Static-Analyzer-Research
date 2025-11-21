@@ -111,9 +111,6 @@ Han Liu, Sen Chen, Ruitao Feng, Chengwei Liu, Kaixuan Li, Zhengzi Xu, Liming Nie
 Junjie Wang, Yuchao Huang, Song Wang, Qing Wang. 2021. Find Bugs in Static Bug Finders. In Proceedings of The 30th International Conference on Program Comprehension (ICPC 2022). ACM, New York, NY, USA, 12 pages. https://doi.org/10.1145/3524610.3527899.
 ```
 
-## 2021
-
-## 2020
 
 ---
 
