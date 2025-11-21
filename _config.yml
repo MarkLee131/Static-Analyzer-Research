@@ -29,6 +29,7 @@ kramdown:
 include:
   - README.md
   - LICENSE
+  - _includes/footer.html
 
 # Exclude from processing
 exclude:
