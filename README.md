@@ -1,8 +1,6 @@
 # Static Analyzer Research
 
-Contributions Welcome License
-
-> A (hopefully comprehensive and systematic) collection of research papers on static analyzers, including analyzing, testing, and verifying static analyzers. Feel free to make a contribution to this repository (e.g., adding new papers) by creating pull requests.
+> A (hopefully comprehensive and systematic) collection of research papers on static analyzers, including analyzing, testing, and verifying static analyzers. Feel free to make a contribution to this repository.
 
 ## Contents
 
