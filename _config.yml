@@ -1,8 +1,35 @@
+# Theme
 theme: jekyll-theme-cayman
-title: Static Analyzer Research
-description: A comprehensive and systematic collection of research papers on static analyzers, including analyzing, testing, and verifying static analyzers.
-show_downloads: true
-
-baseurl: "/Static-Analyzer-Research"
+title: "Static Analyzer Research"
+description: "A curated collection of academic research papers on static analyzers"
 url: "https://marklee131.github.io"
+baseurl: "/Static-Analyzer-Research"
 
+# SEO
+lang: en-US
+author: "Kaixuan Li"
+
+# GitHub metadata
+github:
+  is_project_page: true
+  repository_name: "PoC-Research-Papers"
+  
+# Enable plugins
+plugins:
+  - jekyll-relative-links
+  - jekyll-seo-tag
+
+# Markdown settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# File handling
+include:
+  - README.md
+  - LICENSE
+
+# Exclude from processing
+exclude:
+  - .gitignore
