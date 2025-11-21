@@ -12,7 +12,7 @@ author: "Kaixuan Li"
 # GitHub metadata
 github:
   is_project_page: true
-  repository_name: "PoC-Research-Papers"
+  repository_name: "Static-Analyzer-Research"
   
 # Enable plugins
 plugins:
