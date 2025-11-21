@@ -1,4 +1,4 @@
-theme: jekyll-theme-minimal
+theme: jekyll-theme-cayman
 title: Static Analyzer Research
 description: A comprehensive and systematic collection of research papers on static analyzers, including analyzing, testing, and verifying static analyzers.
 show_downloads: false
