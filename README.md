@@ -1,9 +1,9 @@
-# StaticAnalyzerResearch
+# Static Analyzer Research
 
 A (hopefully comprehensive and systematic) collection of research papers on static analyzers, including analyzing, testing, and verifying static analyzers.
 
 
-Feel free to make contribution to this repository (e.g., adding new papers) by open issues or pull requests.
+Feel free to make a contribution to this repository (e.g., adding new papers) by opening issues or pull requests.
 
 ## Table of Contents
 
@@ -18,9 +18,33 @@ Feel free to make contribution to this repository (e.g., adding new papers) by o
 - [2020](#2020)
 
 
+## 2025
 
+### SOSP 2025
+[KNighter: Transforming Static Analysis with LLM-Synthesized Checkers](https://dl.acm.org/doi/pdf/10.1145/3731569.3764827)
 
+```
+Chenyuan Yang, Zijie Zhao, Zichen Xie, Haoyu Li, and Lingming Zhang. 2025. KNighter: Transforming Static Analysis with LLMSynthesized Checkers. In ACM SIGOPS 31st Symposium on Operating Systems Principles (SOSP ’25), October 13–16, 2025, Seoul, Republic of Korea. ACM, New York, NY, USA, 15 pages. https://doi.org/10.1145/3731569.3764827
+```
+
+### ASE 2025
+
+[Fact-Aligned and Template-Constrained Static Analyzer Rule Enhancement with LLMs](https://mingwen-cs.github.io/paper/ASE-2025-Camera-Ready.pdf)
+```
+Zongze Jiang, Ming Wen, Ge Wen, Hai Jin. 2025. Fact-Aligned and Template-Constrained Static Analyzer Rule Enhancement with LLMs. 
+```
 ## 2024
+
+### ISSTA 2024
+
+- [Characterizing and Detecting Program Representation Faults of Static Analysis Frameworks](https://www.shinhwei.com/SAScope_ISSTA_2024.pdf)
+
+```
+Huaien Zhang, Yu Pei, Shuyun Liang, Zezhong Xing, and Shin Hwei Tan. 2024. Characterizing and Detecting Program Representation Faults of Static Analysis Frameworks. In Proceedings of the 33rd ACM SIGSOFT International
+Symposium on Software Testing and Analysis (ISSTA ’24), September 16–20,
+2024, Vienna, Austria. ACM, New York, NY, USA, 13 pages. https://doi.org/
+10.1145/3650212.3680398
+```
 
 ### FSE 2024
 
