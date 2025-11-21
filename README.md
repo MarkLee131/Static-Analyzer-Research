@@ -1,27 +1,23 @@
 # Static Analyzer Research
 
-A (hopefully comprehensive and systematic) collection of research papers on static analyzers, including analyzing, testing, and verifying static analyzers.
+Contributions Welcome License
 
+> A (hopefully comprehensive and systematic) collection of research papers on static analyzers, including analyzing, testing, and verifying static analyzers. Feel free to make a contribution to this repository (e.g., adding new papers) by creating pull requests.
 
-Feel free to make a contribution to this repository (e.g., adding new papers) by opening issues or pull requests.
+## Contents
 
-## Table of Contents
+2025 | 2024 | 2023 | 2022 | 2021 | 2020
 
-- [2024](#2024)
+---
 
-- [2023](#2023)
-
-- [2022](#2022)
-
-- [2021](#2021)
-
-- [2020](#2020)
+## All Papers
 
 
 ## 2025
 
 ### SOSP 2025
-[KNighter: Transforming Static Analysis with LLM-Synthesized Checkers](https://dl.acm.org/doi/pdf/10.1145/3731569.3764827)
+
+* [KNighter: Transforming Static Analysis with LLM-Synthesized Checkers](https://dl.acm.org/doi/pdf/10.1145/3731569.3764827)
 
 ```
 Chenyuan Yang, Zijie Zhao, Zichen Xie, Haoyu Li, and Lingming Zhang. 2025. KNighter: Transforming Static Analysis with LLMSynthesized Checkers. In ACM SIGOPS 31st Symposium on Operating Systems Principles (SOSP ’25), October 13–16, 2025, Seoul, Republic of Korea. ACM, New York, NY, USA, 15 pages. https://doi.org/10.1145/3731569.3764827
@@ -29,15 +25,17 @@ Chenyuan Yang, Zijie Zhao, Zichen Xie, Haoyu Li, and Lingming Zhang. 2025. KNigh
 
 ### ASE 2025
 
-[Fact-Aligned and Template-Constrained Static Analyzer Rule Enhancement with LLMs](https://mingwen-cs.github.io/paper/ASE-2025-Camera-Ready.pdf)
+* [Fact-Aligned and Template-Constrained Static Analyzer Rule Enhancement with LLMs](https://mingwen-cs.github.io/paper/ASE-2025-Camera-Ready.pdf)
+
 ```
 Zongze Jiang, Ming Wen, Ge Wen, Hai Jin. 2025. Fact-Aligned and Template-Constrained Static Analyzer Rule Enhancement with LLMs. 
 ```
+
 ## 2024
 
 ### ISSTA 2024
 
-- [Characterizing and Detecting Program Representation Faults of Static Analysis Frameworks](https://www.shinhwei.com/SAScope_ISSTA_2024.pdf)
+* [Characterizing and Detecting Program Representation Faults of Static Analysis Frameworks](https://www.shinhwei.com/SAScope_ISSTA_2024.pdf)
 
 ```
 Huaien Zhang, Yu Pei, Shuyun Liang, Zezhong Xing, and Shin Hwei Tan. 2024. Characterizing and Detecting Program Representation Faults of Static Analysis Frameworks. In Proceedings of the 33rd ACM SIGSOFT International
@@ -48,25 +46,19 @@ Symposium on Software Testing and Analysis (ISSTA ’24), September 16–20,
 
 ### FSE 2024
 
-- [Static Application Security Testing Tools for Smart Contracts: How Far Are We?](https://doi.org/10.1145/3660772)
-  - Kaixuan Li, Yue Xue, Sen Chen, Han Liu, Kairan Sun, Ming Hu, Haijun Wang, Yang Liu, and Yixiang Chen
-  - Proc. ACM Softw. Eng. 1, FSE, Article 65 (July 2024), 24 pages
+* [Static Application Security Testing Tools for Smart Contracts: How Far Are We?](https://doi.org/10.1145/3660772)
 
 ```
 Kaixuan Li, Yue Xue, Sen Chen, Han Liu, Kairan Sun, Ming Hu, Haijun Wang, Yang Liu, and Yixiang Chen. 2024. Static Application Security Testing (SAST) Tools for Smart Contracts: How Far Are We? Proc. ACM Softw. Eng. 1, FSE, Article 65 (July 2024), 24 pages. https://doi.org/10.1145/3660772.
 ```
 
-- [Finding and Understanding Defects in Static Analyzers by Constructing Automated Oracles](https://doi.org/10.1145/3660781)
-  - Weigang He, Peng Di, Mengli Ming, Chengyu Zhang, Ting Su, Shijie Li, and Yulei Sui
-  - Proc. ACM Softw. Eng. 1, FSE, Article 74 (July 2024), 23 pages
+* [Finding and Understanding Defects in Static Analyzers by Constructing Automated Oracles](https://doi.org/10.1145/3660781)
 
 ```
 Weigang He, Peng Di, Mengli Ming, Chengyu Zhang, Ting Su, Shijie Li, and Yulei Sui. 2024. Finding and Understanding Defects in Static Analyzers by Constructing Automated Oracles. Proc. ACM Softw. Eng. 1, FSE, Article 74 (July 2024), 23 pages. https://doi.org/10.1145/3660781.
 ```
 
-- [Understanding and Detecting Annotation-Induced Faults of Static Analyzers](https://doi.org/10.1145/3643759)
-  - Huaien Zhang, Yu Pei, Shuyun Liang, and Shin Hwei Tan
-  - Proc. ACM Softw. Eng. 1, FSE, Article 33 (July 2024), 23 pages
+* [Understanding and Detecting Annotation-Induced Faults of Static Analyzers](https://doi.org/10.1145/3643759)
 
 ```
 Huaien Zhang, Yu Pei, Shuyun Liang, and Shin Hwei Tan. 2024. Understanding and Detecting Annotation-Induced Faults of Static Analyzers. Proc. ACM Softw. Eng. 1, FSE, Article 33 (July 2024), 23 pages. https://doi.org/10.1145/3643759.
@@ -75,15 +67,10 @@ Huaien Zhang, Yu Pei, Shuyun Liang, and Shin Hwei Tan. 2024. Understanding and D
 
 ### ISSTA 2024
 
-- [An Empirical Study of Static Analysis Tools for Secure Code Review](https://doi.org/10.1145/nnnnnnn.nnnnnnn)
-  - Wachiraphan Charoenwet, Patanamon Thongtanunam, Van-Thuan Pham, and Christoph Treude
-  - Proc. ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA 2024), 13 pages
+* [An Empirical Study of Static Analysis Tools for Secure Code Review](https://dl.acm.org/doi/pdf/10.1145/3650212.3680313)
 
 ```
-Wachiraphan Charoenwet, Patanamon Thongtanunam, Van-Thuan Pham,
-and Christoph Treude. 2024. An Empirical Study of Static Analysis Tools
-for Secure Code Review. In Proceedings of ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA 2024). ACM, New York, NY,
-USA, 13 pages. https://doi.org/10.1145/nnnnnnn.nnnnnnn.
+Wachiraphan Charoenwet, Patanamon Thongtanunam, Van-Thuan Pham, and Christoph Treude. 2024. An Empirical Study of Static Analysis Tools for Secure Code Review. In Proceedings of ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA 2024). ACM, New York, NY, USA, 13 pages. https://dl.acm.org/doi/pdf/10.1145/3650212.3680313.
 ```
 
 
@@ -92,9 +79,7 @@ USA, 13 pages. https://doi.org/10.1145/nnnnnnn.nnnnnnn.
 
 ### FSE 2023
 
-- [Comparison and Evaluation on Static Application Security Testing (SAST) Tools for Java](https://doi.org/10.1145/3611643.3616262)
-  - Kaixuan Li, Sen Chen, Lingling Fan, Ruitao Feng, Han Liu, Chengwei Liu, Yang Liu, and Yixiang Chen
-  - Proc. ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering (ESEC/FSE 2023), 921–933
+* [Comparison and Evaluation on Static Application Security Testing (SAST) Tools for Java](https://doi.org/10.1145/3611643.3616262)
 
 
 ```
@@ -102,9 +87,7 @@ Kaixuan Li, Sen Chen, Lingling Fan, Ruitao Feng, Han Liu, Chengwei Liu, Yang Liu
 ```
 
 
-- [Statfier: Automated Testing of Static Analyzers via Semantic-Preserving Program Transformations](https://doi.org/10.1145/3611643.3616272)
-  - Huaien Zhang, Yu Pei, Junjie Chen, and Shin Hwei Tan
-  - Proc. ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering (ESEC/FSE 2023), 237–249
+* [Statfier: Automated Testing of Static Analyzers via Semantic-Preserving Program Transformations](https://doi.org/10.1145/3611643.3616272)
 
 ```
 Huaien Zhang, Yu Pei, Junjie Chen, and Shin Hwei Tan. 2023. Statfier: Automated Testing of Static Analyzers via Semantic-Preserving Program Transformations. In Proceedings of the 31st ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering (ESEC/FSE 2023). Association for Computing Machinery, New York, NY, USA, 237–249. https://doi.org/10.1145/3611643.3616272.
@@ -112,36 +95,36 @@ Huaien Zhang, Yu Pei, Junjie Chen, and Shin Hwei Tan. 2023. Statfier: Automated 
 
 ### ISSTA 2023
 
-- [A Comprehensive Study on Quality Assurance Tools for Java](https://doi.org/10.1145/3597926.3598056)
-  - Han Liu, Sen Chen, Ruitao Feng, Chengwei Liu, Kaixuan Li, Zhengzi Xu, Liming Nie, Yang Liu, and Yixiang Chen
-  - Proc. ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA 2023), 285–297
+* [A Comprehensive Study on Quality Assurance Tools for Java](https://doi.org/10.1145/3597926.3598056)
 
 ```
 Han Liu, Sen Chen, Ruitao Feng, Chengwei Liu, Kaixuan Li, Zhengzi Xu, Liming Nie, Yang Liu, and Yixiang Chen. 2023. A Comprehensive Study on Quality Assurance Tools for Java. In Proceedings of the 32nd ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA 2023). Association for Computing Machinery, New York, NY, USA, 285–297. https://doi.org/10.1145/3597926.3598056.
 ```
 
-TODO: Add more papers
-
 ## 2022
-
-### FSE 2022
-
-### ISSTA 2022
 
 ### ICPC 2022
 
-- [Find Bugs in Static Bug Finders](https://doi.org/10.1145/3524610.3527899)
-  - Junjie Wang, Yuchao Huang, Song Wang, Qing Wang
-  - Proc. ACM International Conference on Program Comprehension (ICPC 2022), 12 pages
+* [Find Bugs in Static Bug Finders](https://doi.org/10.1145/3524610.3527899)
 
 ```
 Junjie Wang, Yuchao Huang, Song Wang, Qing Wang. 2021. Find Bugs in Static Bug Finders. In Proceedings of The 30th International Conference on Program Comprehension (ICPC 2022). ACM, New York, NY, USA, 12 pages. https://doi.org/10.1145/3524610.3527899.
 ```
 
-
-Find Bugs in Static Bug Finders
-
 ## 2021
 
 ## 2020
+
+---
+
+## Contributing
+
+Contributions are welcome:
+
+* Adding new papers
+* Suggesting improvements
+
+## License
+
+This documentation is licensed under CC0 1.0 Universal. Individual papers retain their original copyrights.
  
