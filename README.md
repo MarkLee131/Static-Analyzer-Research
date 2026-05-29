@@ -4,14 +4,48 @@
 
 ## Contents
 
-| [2025](#2025) | [2024](#2024) | [2023](#2023) | [2022](#2022) | [2021](#2021) | [2020](#2020) |
+| [2026](#2026) | [2025](#2025) | [2024](#2024) | [2023](#2023) | [2022](#2022) |
 
 ---
 
 ## All Papers
 
 
+## 2026
+
+### PLDI 2026
+
+* [Bridging Coverage and Confidence: Reliable Static False Alarm Elimination via Input-Agnosticity](https://doi.org/10.1145/3808301)
+
+```
+Jiayi Wang, Yu Wang, Linzhang Wang, and Ke Wang. 2026. Bridging Coverage and Confidence: Reliable Static False Alarm Elimination via Input-Agnosticity. Proc. ACM Program. Lang. PLDI. https://doi.org/10.1145/3808301.
+```
+
 ## 2025
+
+### ICSE 2025
+
+* [An Extensive Empirical Study of Nondeterministic Behavior in Static Analysis Tools](https://doi.org/10.1109/ICSE55347.2025.00125)
+
+```
+Miao Miao, Austin Mordahl, Dakota Soles, Alice Beideck, and Shiyi Wei. 2025. An Extensive Empirical Study of Nondeterministic Behavior in Static Analysis Tools. In Proceedings of the 47th IEEE/ACM International Conference on Software Engineering (ICSE 2025). IEEE. https://doi.org/10.1109/ICSE55347.2025.00125.
+```
+
+### OOPSLA 2025
+
+* [Validating Soundness and Completeness in Pattern-Match Coverage Analyzers](https://doi.org/10.1145/3763171)
+
+```
+Stefanos Chaliasos, Thodoris Sotiropoulos, Georgios-Petros Drosos, Charalambos Mitropoulos, Dimitris Mitropoulos, and Diomidis Spinellis. 2025. Validating Soundness and Completeness in Pattern-Match Coverage Analyzers. Proc. ACM Program. Lang. 9, OOPSLA. https://doi.org/10.1145/3763171.
+```
+
+### FSE 2025
+
+* [Understanding Industry Perspectives of Static Application Security Testing (SAST) Evaluation](https://doi.org/10.1145/3729404)
+
+```
+Yuan Li, Peisen Yao, Kan Yu, Chengpeng Wang, Yaoyang Ye, Song Li, Meng Luo, Yepang Liu, and Kui Ren. 2025. Understanding Industry Perspectives of Static Application Security Testing (SAST) Evaluation. Proc. ACM Softw. Eng. 2, FSE. https://doi.org/10.1145/3729404.
+```
 
 ### SOSP 2025
 
@@ -27,6 +61,14 @@ Chenyuan Yang, Zijie Zhao, Zichen Xie, Haoyu Li, and Lingming Zhang. 2025. KNigh
 
 ```
 Zongze Jiang, Ming Wen, Ge Wen, Hai Jin. 2025. Fact-Aligned and Template-Constrained Static Analyzer Rule Enhancement with LLMs. 
+```
+
+### arXiv (Preprint)
+
+* [StaAgent: An Agentic Framework for Testing Static Analyzers](https://arxiv.org/abs/2507.15892)
+
+```
+Elijah Nnorom, Md Basim Uddin Ahmed, Jiho Shin, Hung Viet Pham, and Song Wang. 2025. StaAgent: An Agentic Framework for Testing Static Analyzers. arXiv:2507.15892. https://arxiv.org/abs/2507.15892.
 ```
 
 ## 2024
@@ -72,8 +114,31 @@ Wachiraphan Charoenwet, Patanamon Thongtanunam, Van-Thuan Pham, and Christoph Tr
 ```
 
 
+### ASE 2024
+
+* [Interrogation Testing of Program Analyzers for Soundness and Precision Issues](https://doi.org/10.1145/3691620.3695034)
+
+```
+David Kaindlstorfer, Anastasia Isychev, Valentin Wüstholz, and Maria Christakis. 2024. Interrogation Testing of Program Analyzers for Soundness and Precision Issues. In Proceedings of the 39th IEEE/ACM International Conference on Automated Software Engineering (ASE 2024). ACM, New York, NY, USA. https://doi.org/10.1145/3691620.3695034.
+```
+
+* [Constraint-Based Test Oracles for Program Analyzers](https://doi.org/10.1145/3691620.3695035)
+
+```
+Markus Fleischmann, David Kaindlstorfer, Anastasia Isychev, Valentin Wüstholz, and Maria Christakis. 2024. Constraint-Based Test Oracles for Program Analyzers. In Proceedings of the 39th IEEE/ACM International Conference on Automated Software Engineering (ASE 2024). ACM, New York, NY, USA. https://doi.org/10.1145/3691620.3695035.
+```
+
+
 
 ## 2023
+
+### ICSE 2023
+
+* [ECSTATIC: An Extensible Framework for Testing and Debugging Configurable Static Analysis](https://doi.org/10.1109/ICSE48619.2023.00056)
+
+```
+Austin Mordahl, Zenong Zhang, Dakota Soles, and Shiyi Wei. 2023. ECSTATIC: An Extensible Framework for Testing and Debugging Configurable Static Analysis. In Proceedings of the 45th International Conference on Software Engineering (ICSE 2023). IEEE, 550–562. https://doi.org/10.1109/ICSE48619.2023.00056.
+```
 
 ### FSE 2023
 
