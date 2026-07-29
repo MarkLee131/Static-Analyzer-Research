@@ -283,6 +283,8 @@ Contributions are welcome:
 * Adding new papers
 * Suggesting improvements
 
+Maintained by [Kaixuan Li](https://kaixuanli-ecnu.github.io/).
+
 ## License
 
 This documentation is licensed under CC0 1.0 Universal. Individual papers retain their original copyrights.

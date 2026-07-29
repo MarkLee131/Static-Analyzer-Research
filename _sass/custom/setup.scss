@@ -9,3 +9,9 @@ $font-size-5: 1.25rem; // 20px
 $content-width: 62rem;
 $nav-width: 17rem;
 $body-line-height: 1.6;
+
+// Sidebar rows scale with the root font size, which would make the year and
+// venue list very tall. Keep them compact. The theme uses the `-sm` value below
+// the `md` breakpoint and the plain one above it, so both need overriding.
+$nav-list-item-height: 1.7rem;
+$nav-list-item-height-sm: 1.6rem;

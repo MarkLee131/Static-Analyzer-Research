@@ -98,18 +98,21 @@
   }
 }
 
-// Sidebar footer: theme switch and credit line.
-.sidebar-extras {
-  font-size: 0.7rem;
-  line-height: 1.5;
+// Sidebar navigation. The main content is set in a large type size; the year
+// and venue list reads better a couple of steps down from it.
+.site-nav {
+  font-size: 0.8rem;
 }
 
+// Theme switch, in the top bar between the search box and the aux links.
 .theme-toggle {
-  display: inline-block;
-  margin-bottom: 0.6rem;
-  padding: 0.2rem 0.55rem;
-  font-size: 0.68rem;
+  flex-shrink: 0;
+  align-self: center;
+  margin-right: $gutter-spacing-sm;
+  padding: 0.15rem 0.5rem;
+  font-size: 0.7rem;
   color: $body-text-color;
+  white-space: nowrap;
   cursor: pointer;
   background-color: $code-background-color;
   border: 1px solid $border-color;
@@ -118,6 +121,12 @@
   &:hover {
     color: $link-color;
   }
+}
+
+// Sidebar footer: credit line.
+.sidebar-extras {
+  font-size: 0.7rem;
+  line-height: 1.5;
 }
 
 .sidebar-credit {

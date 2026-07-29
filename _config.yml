@@ -41,6 +41,7 @@ back_to_top: true
 back_to_top_text: "Back to top"
 
 aux_links:
+  "Kaixuan Li": "https://kaixuanli-ecnu.github.io/"
   "View on GitHub": "https://github.com/MarkLee131/Static-Analyzer-Research"
 aux_links_new_tab: true
 
