@@ -135,8 +135,12 @@
       function apply(next) {
         jtd.setTheme(next);
         Array.prototype.forEach.call(buttons, function (button) {
-          button.querySelector(".theme-toggle-label").textContent =
-            next === "dark" ? "Light mode" : "Dark mode";
+          // The stylesheet picks the sun or the moon from this attribute.
+          button.setAttribute("data-theme", next);
+          button.setAttribute(
+            "aria-label",
+            next === "dark" ? "Switch to light theme" : "Switch to dark theme"
+          );
         });
         try {
           localStorage.setItem("jtd-theme", next);

@@ -101,26 +101,56 @@
 // Sidebar navigation. The main content is set in a large type size; the year
 // and venue list reads better a couple of steps down from it.
 .site-nav {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
 }
 
 // Theme switch, in the top bar between the search box and the aux links.
+// Icon only: a moon while the light theme is active, a sun while the dark one
+// is. The button carries data-theme, which the script keeps in sync.
 .theme-toggle {
+  display: inline-flex;
   flex-shrink: 0;
   align-self: center;
-  margin-right: $gutter-spacing-sm;
-  padding: 0.15rem 0.5rem;
-  font-size: 0.7rem;
+  align-items: center;
+  justify-content: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  margin-right: 0.4rem;
   color: $body-text-color;
-  white-space: nowrap;
   cursor: pointer;
-  background-color: $code-background-color;
-  border: 1px solid $border-color;
-  border-radius: 4px;
+  background-color: transparent;
+  border: 0;
+  border-radius: 50%;
+  opacity: 0.6;
+  transition:
+    opacity 0.15s ease,
+    color 0.15s ease,
+    background-color 0.15s ease;
 
   &:hover {
     color: $link-color;
+    background-color: $search-background-color;
+    opacity: 1;
   }
+}
+
+.theme-toggle-icon {
+  width: 1rem;
+  height: 1rem;
+  fill: none;
+  stroke: currentcolor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.theme-toggle .theme-toggle-sun,
+.theme-toggle[data-theme="dark"] .theme-toggle-moon {
+  display: none;
+}
+
+.theme-toggle[data-theme="dark"] .theme-toggle-sun {
+  display: inline-block;
 }
 
 // Sidebar footer: credit line.
