@@ -160,7 +160,13 @@ David Kaindlstorfer, Anastasia Isychev, Valentin Wüstholz, and Maria Christakis
 Markus Fleischmann, David Kaindlstorfer, Anastasia Isychev, Valentin Wüstholz, and Maria Christakis. 2024. Constraint-Based Test Oracles for Program Analyzers. In Proceedings of the 39th IEEE/ACM International Conference on Automated Software Engineering (ASE 2024). ACM, New York, NY, USA. https://doi.org/10.1145/3691620.3695035.
 ```
 
+### arXiv (Preprint)
 
+* [An Empirical Study of False Negatives and Positives of Static Code Analyzers From the Perspective of Historical Issues](https://arxiv.org/abs/2408.13855)
+
+```
+Han Cui, Menglei Xie, Ting Su, Chengyu Zhang, and Shin Hwei Tan. 2024. An Empirical Study of False Negatives and Positives of Static Code Analyzers From the Perspective of Historical Issues. arXiv:2408.13855. https://arxiv.org/abs/2408.13855.
+```
 
 ## 2023
 
