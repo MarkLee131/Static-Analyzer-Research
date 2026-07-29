@@ -1,0 +1,171 @@
+<div class="sidebar-extras">
+  <button type="button" class="btn-reset theme-toggle" aria-label="Toggle dark mode">
+    <span class="theme-toggle-label"></span>
+  </button>
+  <p class="sidebar-credit">
+    Curated by <a href="https://github.com/MarkLee131">Kaixuan Li</a>.<br>
+    Listing licensed <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a>;
+    papers retain their original copyrights.
+  </p>
+</div>
+
+<script>
+  // The site is a single page rendered from README.md, so the sidebar
+  // navigation is derived from the headings of that page: `## <year>` becomes a
+  // top-level entry and `### <venue>` its children. This keeps README.md the one
+  // place where papers are added.
+  //
+  // The theme renders this include twice (sidebar on desktop, page footer on
+  // mobile), so everything below has to run only once.
+  (function () {
+    if (window.__starNavInitialised) return;
+    window.__starNavInitialised = true;
+
+    function slug(el) {
+      if (el.id) return el.id;
+      el.id = el.textContent.trim().toLowerCase().replace(/[^\w]+/g, "-");
+      return el.id;
+    }
+
+    function link(heading) {
+      var a = document.createElement("a");
+      a.className = "nav-list-link";
+      a.href = "#" + slug(heading);
+      a.textContent = heading.textContent.replace(/\s*¶?\s*$/, "").trim();
+      return a;
+    }
+
+    function buildNav() {
+      var main = document.querySelector(".main-content");
+      var nav = document.getElementById("site-nav");
+      if (!main || !nav) return null;
+
+      var headings = main.querySelectorAll("h2, h3");
+      if (!headings.length) return null;
+
+      var root = document.createElement("ul");
+      root.className = "nav-list";
+      var section = null;
+
+      Array.prototype.forEach.call(headings, function (heading) {
+        // Skip headings hidden on the site, such as the README's own jump table.
+        if (!heading.getClientRects().length) return;
+
+        var item = document.createElement("li");
+        item.className = "nav-list-item";
+
+        if (heading.tagName === "H2") {
+          item.appendChild(link(heading));
+          root.appendChild(item);
+          section = item;
+          return;
+        }
+
+        if (!section) return;
+        var children = section.querySelector("ul.nav-list");
+        if (!children) {
+          children = document.createElement("ul");
+          children.className = "nav-list";
+          var expander = document.createElement("button");
+          expander.className = "nav-list-expander btn-reset";
+          expander.setAttribute("aria-label", "toggle links in this section");
+          expander.setAttribute("aria-expanded", "true");
+          expander.innerHTML =
+            '<svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>';
+          expander.addEventListener("click", function () {
+            var open = expander.getAttribute("aria-expanded") === "true";
+            expander.setAttribute("aria-expanded", open ? "false" : "true");
+            section.classList.toggle("active", !open);
+          });
+          section.insertBefore(expander, section.firstChild);
+          section.classList.add("active");
+          section.appendChild(children);
+        }
+        item.appendChild(link(heading));
+        children.appendChild(item);
+      });
+
+      nav.insertBefore(root, nav.firstChild);
+      return root;
+    }
+
+    // Highlight the entry for whichever section is currently on screen.
+    function trackActive(root) {
+      var links = root.querySelectorAll(".nav-list-link");
+      var targets = [];
+      Array.prototype.forEach.call(links, function (a) {
+        var target = document.getElementById(a.hash.slice(1));
+        if (target) targets.push({ link: a, target: target });
+      });
+      if (!targets.length || !("IntersectionObserver" in window)) return;
+
+      var visible = new Set();
+      var observer = new IntersectionObserver(
+        function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) visible.add(entry.target);
+            else visible.delete(entry.target);
+          });
+          var current = targets.filter(function (t) {
+            return visible.has(t.target);
+          })[0];
+          if (!current) return;
+          targets.forEach(function (t) {
+            t.link.classList.toggle("active", t === current);
+          });
+        },
+        { rootMargin: "0px 0px -70% 0px" }
+      );
+      targets.forEach(function (t) {
+        observer.observe(t.target);
+      });
+    }
+
+    function setupThemeToggle() {
+      var buttons = document.querySelectorAll(".theme-toggle");
+      if (!buttons.length || typeof jtd === "undefined") return;
+
+      var stored = null;
+      try {
+        stored = localStorage.getItem("jtd-theme");
+      } catch (e) {
+        /* private mode */
+      }
+      var prefersDark =
+        window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+      var theme = stored || (prefersDark ? "dark" : "light");
+
+      function apply(next) {
+        jtd.setTheme(next);
+        Array.prototype.forEach.call(buttons, function (button) {
+          button.querySelector(".theme-toggle-label").textContent =
+            next === "dark" ? "Light mode" : "Dark mode";
+        });
+        try {
+          localStorage.setItem("jtd-theme", next);
+        } catch (e) {
+          /* private mode */
+        }
+      }
+
+      apply(theme);
+      Array.prototype.forEach.call(buttons, function (button) {
+        button.addEventListener("click", function () {
+          apply(jtd.getTheme() === "dark" ? "light" : "dark");
+        });
+      });
+    }
+
+    function init() {
+      var root = buildNav();
+      if (root) trackActive(root);
+      setupThemeToggle();
+    }
+
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", init);
+    } else {
+      init();
+    }
+  })();
+</script>

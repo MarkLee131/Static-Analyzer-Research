@@ -1,35 +1,68 @@
-# Theme
-theme: jekyll-theme-cayman
 title: "Static Analyzer Research"
-description: "A curated collection of academic research papers on static analyzers"
+description: "A curated collection of research papers on analyzing, testing, and verifying static analyzers"
+lang: en-US
+author: "Kaixuan Li"
+
 url: "https://marklee131.github.io"
 baseurl: "/Static-Analyzer-Research"
 
-# SEO
-lang: en-US
-author: "Kaixuan Li"
+# Theme (pinned; requires Jekyll >= 3.8.5, so it builds on classic GitHub Pages)
+remote_theme: just-the-docs/just-the-docs@v0.12.0
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-include-cache
+  - jekyll-seo-tag
+  - jekyll-relative-links
 
 # GitHub metadata
 github:
   is_project_page: true
   repository_name: "Static-Analyzer-Research"
-  
-# Enable plugins
-plugins:
-  - jekyll-relative-links
-  - jekyll-seo-tag
 
-# Markdown settings
+# --- Just the Docs options ---
+
+color_scheme: light
+
+search_enabled: true
+search:
+  heading_level: 3
+  previews: 3
+  preview_words_before: 5
+  preview_words_after: 10
+  tokenizer_separator: /[\s/]+/
+  rel_url: true
+  button: false
+  focus_shortcut_key: "k"
+
+heading_anchors: true
+
+back_to_top: true
+back_to_top_text: "Back to top"
+
+aux_links:
+  "View on GitHub": "https://github.com/MarkLee131/Static-Analyzer-Research"
+aux_links_new_tab: true
+
+# README.md stays the single source of truth: index.md pulls it in verbatim.
+# Keep the raw README out of the nav, the search index, and the sitemap so it
+# does not show up as a second copy of the home page.
+defaults:
+  - scope:
+      path: "README.md"
+    values:
+      nav_exclude: true
+      search_exclude: true
+      sitemap: false
+
 markdown: kramdown
 kramdown:
   input: GFM
   syntax_highlighter: rouge
 
-# File handling
-include:
-  - README.md
-  - LICENSE
-
-# Exclude from processing
 exclude:
   - .gitignore
+  - .claude
+  - Gemfile
+  - Gemfile.lock
+  - vendor

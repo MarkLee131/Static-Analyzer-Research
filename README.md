@@ -4,7 +4,7 @@
 
 ## Contents
 
-| [2026](#2026) | [2025](#2025) | [2024](#2024) | [2023](#2023) | [2022](#2022) |
+| [2026](#2026) | [2025](#2025) | [2024](#2024) | [2023](#2023) | [2022](#2022) | [2019](#2019) | [2018](#2018) | [Related Work](#related-work) |
 
 ---
 
@@ -19,6 +19,38 @@
 
 ```
 Jiayi Wang, Yu Wang, Linzhang Wang, and Ke Wang. 2026. Bridging Coverage and Confidence: Reliable Static False Alarm Elimination via Input-Agnosticity. Proc. ACM Program. Lang. PLDI. https://doi.org/10.1145/3808301.
+```
+
+### ICSE 2026
+
+* [An Empirical Study on Static Application Security Testing (SAST) Tools for Python](https://conf.researchr.org/details/icse-2026/icse-2026-research-track/30/An-Empirical-Study-on-Static-Application-Security-Testing-SAST-Tools-for-Python)
+
+```
+Zhuohang Liu, Zhi Wang, Haotong Liu, and Wanpeng Li. 2026. An Empirical Study on Static Application Security Testing (SAST) Tools for Python. In Proceedings of the 48th IEEE/ACM International Conference on Software Engineering (ICSE 2026).
+```
+
+### ISSTA 2026
+
+* [Testing Static Taint Analyzers with Equivalence Modulo Taint](https://github.com/Rigorous-Software-Engineering/TaintCC)
+
+```
+Maria Christakis, Anastasia Isychev, Samuel Pilz, Florian Tesarek, and Valentin Wüstholz. 2026. Testing Static Taint Analyzers with Equivalence Modulo Taint. In Proceedings of the 35th ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA 2026). Artifact: https://doi.org/10.5281/zenodo.21266657.
+```
+
+### ASE 2026
+
+* Testing Static Analyzers via Semantic-Preserving Mutators Learned from Real-World Refactoring Practice
+
+```
+Meilin Li, Kaixuan Li, Zifan Xie, Shiyu Qiu, Ming Wen, Maolin Sun, and Hongyu Zhang. 2026. Testing Static Analyzers via Semantic-Preserving Mutators Learned from Real-World Refactoring Practice. In Proceedings of the 41st IEEE/ACM International Conference on Automated Software Engineering (ASE 2026). To appear.
+```
+
+### arXiv (Preprint)
+
+* [Detecting Call Graph Unsoundness without Ground Truth](https://arxiv.org/abs/2604.00885)
+
+```
+Fangtian Zhong, Ollie Wold, and Joseph Windmann. 2026. Detecting Call Graph Unsoundness without Ground Truth. arXiv:2604.00885. https://arxiv.org/abs/2604.00885.
 ```
 
 ## 2025
@@ -174,6 +206,71 @@ Han Liu, Sen Chen, Ruitao Feng, Chengwei Liu, Kaixuan Li, Zhengzi Xu, Liming Nie
 Junjie Wang, Yuchao Huang, Song Wang, Qing Wang. 2021. Find Bugs in Static Bug Finders. In Proceedings of The 30th International Conference on Program Comprehension (ICPC 2022). ACM, New York, NY, USA, 12 pages. https://doi.org/10.1145/3524610.3527899.
 ```
 
+## 2019
+
+### ISSTA 2019
+
+* [Differentially Testing Soundness and Precision of Program Analyzers](https://mariachris.github.io/Pubs/ISSTA-2019.pdf)
+
+```
+Christian Klinger, Maria Christakis, and Valentin Wüstholz. 2019. Differentially Testing Soundness and Precision of Program Analyzers. In Proceedings of the 28th ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA 2019). Association for Computing Machinery, New York, NY, USA, 239–250. https://arxiv.org/abs/1812.05033.
+```
+
+## 2018
+
+### ASE 2018
+
+* [Automatically Testing Implementations of Numerical Abstract Domains](https://doi.org/10.1145/3238147.3240464)
+
+```
+Alexandra Bugariu, Valentin Wüstholz, Maria Christakis, and Peter Müller. 2018. Automatically Testing Implementations of Numerical Abstract Domains. In Proceedings of the 33rd ACM/IEEE International Conference on Automated Software Engineering (ASE 2018). Association for Computing Machinery, New York, NY, USA, 768–778. https://doi.org/10.1145/3238147.3240464.
+```
+
+---
+
+## Related Work
+
+Papers whose subject is not a static analysis tool (and certainly not a SAST tool), but whose methodology transfers directly to testing static analyzers: the solver and engine backends that analyzers are built on, and empirical studies of analyzer unsoundness and developer practice.
+
+### Testing Solvers and Engines Behind Analyzers
+
+* Interrogation Testing of CHC Solvers
+
+```
+David Kaindlstorfer, Anastasia Isychev, Valentin Wüstholz, and Maria Christakis. 2026. Interrogation Testing of CHC Solvers. In Proceedings of the ACM International Conference on the Foundations of Software Engineering (FSE 2026). To appear.
+```
+
+* [Dependency-Aware Metamorphic Testing of Datalog Engines](https://doi.org/10.1145/3597926.3598052)
+
+```
+Muhammad Numair Mansur, Valentin Wüstholz, and Maria Christakis. 2023. Dependency-Aware Metamorphic Testing of Datalog Engines. In Proceedings of the 32nd ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA 2023). Association for Computing Machinery, New York, NY, USA, 236–247. https://doi.org/10.1145/3597926.3598052.
+```
+
+* [Metamorphic Testing of Datalog Engines](https://doi.org/10.1145/3468264.3468573)
+
+```
+Muhammad Numair Mansur, Maria Christakis, and Valentin Wüstholz. 2021. Metamorphic Testing of Datalog Engines. In Proceedings of the 29th ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering (ESEC/FSE 2021). Association for Computing Machinery, New York, NY, USA, 639–650. https://doi.org/10.1145/3468264.3468573.
+```
+
+* [Detecting Critical Bugs in SMT Solvers Using Blackbox Mutational Fuzzing](https://doi.org/10.1145/3368089.3409763)
+
+```
+Muhammad Numair Mansur, Maria Christakis, Valentin Wüstholz, and Fuyuan Zhang. 2020. Detecting Critical Bugs in SMT Solvers Using Blackbox Mutational Fuzzing. In Proceedings of the 28th ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering (ESEC/FSE 2020). Association for Computing Machinery, New York, NY, USA, 701–712. https://doi.org/10.1145/3368089.3409763.
+```
+
+### Analyzer Unsoundness and Developer Practice
+
+* [An Experimental Evaluation of Deliberate Unsoundness in a Static Program Analyzer](https://doi.org/10.1007/978-3-662-46081-8_19)
+
+```
+Maria Christakis, Peter Müller, and Valentin Wüstholz. 2015. An Experimental Evaluation of Deliberate Unsoundness in a Static Program Analyzer. In Verification, Model Checking, and Abstract Interpretation (VMCAI 2015). Springer, 336–354. https://doi.org/10.1007/978-3-662-46081-8_19.
+```
+
+* [What Developers Want and Need from Program Analysis: An Empirical Study](https://doi.org/10.1145/2970276.2970347)
+
+```
+Maria Christakis and Christian Bird. 2016. What Developers Want and Need from Program Analysis: An Empirical Study. In Proceedings of the 31st IEEE/ACM International Conference on Automated Software Engineering (ASE 2016). Association for Computing Machinery, New York, NY, USA, 332–343. https://doi.org/10.1145/2970276.2970347.
+```
 
 ---
 

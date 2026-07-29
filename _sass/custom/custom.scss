@@ -1,0 +1,126 @@
+// Styling for the paper listing. The page is README.md rendered by the theme,
+// so everything below targets plain Markdown output: `## <year>` sections,
+// `### <venue>` subsections, a bullet per paper, and a fenced block holding the
+// full citation.
+
+.main-content {
+  h1:first-of-type {
+    margin-bottom: 0.4rem;
+    font-size: 2rem !important;
+    line-height: 1.2;
+  }
+
+  // Section heading for a year.
+  h2 {
+    margin-top: 2.4rem;
+    padding-bottom: 0.35rem;
+    border-bottom: 1px solid $border-color;
+    font-size: 1.45rem !important;
+  }
+
+  // Venue label, e.g. "ASE 2026".
+  h3 {
+    display: inline-block;
+    margin-top: 1.7rem;
+    margin-bottom: 0.55rem;
+    padding: 0.15rem 0.55rem;
+    font-size: 0.72rem !important;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    background-color: $code-background-color;
+    border: 1px solid $border-color;
+    border-radius: 4px;
+  }
+
+  // Paper titles.
+  ul > li {
+    margin-bottom: 0.35rem;
+
+    > a {
+      font-weight: 500;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  // Citations. Unlike code, these should wrap rather than scroll sideways.
+  div.highlighter-rouge {
+    margin: 0.5rem 0 1.6rem;
+    border: 0;
+    border-left: 3px solid $border-color;
+    border-radius: 0;
+    background-color: transparent;
+
+    div.highlight,
+    pre.highlight {
+      background-color: transparent;
+    }
+
+    pre.highlight {
+      padding: 0.1rem 0 0.1rem 0.85rem;
+    }
+
+    code {
+      display: block;
+      font-size: 0.72rem;
+      line-height: 1.55;
+      color: $body-text-color;
+      white-space: pre-wrap;
+      overflow-wrap: break-word;
+      opacity: 0.78;
+    }
+  }
+
+  // Intro paragraph.
+  blockquote {
+    margin: 0 0 1.5rem;
+    padding-left: 1rem;
+    border-left: 3px solid $border-color;
+    font-size: 0.9rem;
+    color: $body-text-color;
+    opacity: 0.85;
+  }
+
+  // The README opens with a year jump table, which the sidebar already covers.
+  // Hide it here; it stays useful when the list is browsed on GitHub.
+  #contents,
+  #contents + .table-wrapper,
+  #contents + .table-wrapper + hr {
+    display: none;
+  }
+
+  hr {
+    margin: 2.5rem 0;
+  }
+}
+
+// Sidebar footer: theme switch and credit line.
+.sidebar-extras {
+  font-size: 0.7rem;
+  line-height: 1.5;
+}
+
+.theme-toggle {
+  display: inline-block;
+  margin-bottom: 0.6rem;
+  padding: 0.2rem 0.55rem;
+  font-size: 0.68rem;
+  color: $body-text-color;
+  cursor: pointer;
+  background-color: $code-background-color;
+  border: 1px solid $border-color;
+  border-radius: 4px;
+
+  &:hover {
+    color: $link-color;
+  }
+}
+
+.sidebar-credit {
+  margin: 0;
+  opacity: 0.75;
+}
