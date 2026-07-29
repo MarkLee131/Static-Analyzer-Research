@@ -98,10 +98,53 @@
   }
 }
 
-// Sidebar navigation. The main content is set in a large type size; the year
-// and venue list reads better a couple of steps down from it.
+// Sidebar navigation. Two levels, separated by weight and colour rather than by
+// size: the year is a quiet group label and the venues under it are the actual
+// navigation targets.
 .site-nav {
   font-size: 0.7rem;
+
+  // Year, and the standalone sections such as "All Papers" or "License".
+  > .nav-list > .nav-list-item {
+    margin-top: 0.55rem;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    > .nav-list-link {
+      min-height: 0;
+      font-size: 0.55rem;
+      font-weight: 600;
+      line-height: 1.4;
+      color: $nav-child-link-color;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+    }
+
+    // The theme sizes the expander from the full row height and lets the arrow
+    // overflow its padding box. Match the label's line box and centre the arrow
+    // in it explicitly.
+    > .nav-list-expander {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 1.3rem;
+      padding: 0;
+      color: $nav-child-link-color;
+      opacity: 0.5;
+
+      svg {
+        width: 0.7rem;
+        height: 0.7rem;
+      }
+    }
+  }
+
+  // Venues.
+  .nav-list .nav-list .nav-list-link {
+    line-height: 1.35;
+  }
 }
 
 // Theme switch, in the top bar between the search box and the aux links.
