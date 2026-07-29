@@ -6,7 +6,7 @@
 .main-content {
   h1:first-of-type {
     margin-bottom: 0.4rem;
-    font-size: 2rem !important;
+    font-size: 2.1rem !important;
     line-height: 1.2;
   }
 
@@ -15,7 +15,7 @@
     margin-top: 2.4rem;
     padding-bottom: 0.35rem;
     border-bottom: 1px solid $border-color;
-    font-size: 1.45rem !important;
+    font-size: 1.5rem !important;
   }
 
   // Venue label, e.g. "ASE 2026".
@@ -24,7 +24,7 @@
     margin-top: 1.7rem;
     margin-bottom: 0.55rem;
     padding: 0.15rem 0.55rem;
-    font-size: 0.72rem !important;
+    font-size: 0.75rem !important;
     font-weight: 600;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -66,12 +66,12 @@
 
     code {
       display: block;
-      font-size: 0.72rem;
+      font-size: 0.8rem;
       line-height: 1.55;
       color: $body-text-color;
       white-space: pre-wrap;
       overflow-wrap: break-word;
-      opacity: 0.78;
+      opacity: 0.82;
     }
   }
 

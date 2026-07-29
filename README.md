@@ -4,7 +4,7 @@
 
 ## Contents
 
-| [2026](#2026) | [2025](#2025) | [2024](#2024) | [2023](#2023) | [2022](#2022) | [2019](#2019) | [2018](#2018) | [Related Work](#related-work) |
+| [2026](#2026) | [2025](#2025) | [2024](#2024) | [2023](#2023) | [2022](#2022) | [2019](#2019) | [Related Work](#related-work) |
 
 ---
 
@@ -216,23 +216,13 @@ Junjie Wang, Yuchao Huang, Song Wang, Qing Wang. 2021. Find Bugs in Static Bug F
 Christian Klinger, Maria Christakis, and Valentin Wüstholz. 2019. Differentially Testing Soundness and Precision of Program Analyzers. In Proceedings of the 28th ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA 2019). Association for Computing Machinery, New York, NY, USA, 239–250. https://arxiv.org/abs/1812.05033.
 ```
 
-## 2018
-
-### ASE 2018
-
-* [Automatically Testing Implementations of Numerical Abstract Domains](https://doi.org/10.1145/3238147.3240464)
-
-```
-Alexandra Bugariu, Valentin Wüstholz, Maria Christakis, and Peter Müller. 2018. Automatically Testing Implementations of Numerical Abstract Domains. In Proceedings of the 33rd ACM/IEEE International Conference on Automated Software Engineering (ASE 2018). Association for Computing Machinery, New York, NY, USA, 768–778. https://doi.org/10.1145/3238147.3240464.
-```
-
 ---
 
 ## Related Work
 
-Papers whose subject is not a static analysis tool (and certainly not a SAST tool), but whose methodology transfers directly to testing static analyzers: the solver and engine backends that analyzers are built on, and empirical studies of analyzer unsoundness and developer practice.
+Papers whose subject is not a static analysis tool (and certainly not a SAST tool), but whose methodology transfers directly to testing static analyzers: the backends and libraries that analyzers are built on, and empirical studies of analyzer unsoundness and developer practice.
 
-### Testing Solvers and Engines Behind Analyzers
+### Testing Analyzer Backends and Libraries
 
 * Interrogation Testing of CHC Solvers
 
@@ -256,6 +246,12 @@ Muhammad Numair Mansur, Maria Christakis, and Valentin Wüstholz. 2021. Metamorp
 
 ```
 Muhammad Numair Mansur, Maria Christakis, Valentin Wüstholz, and Fuyuan Zhang. 2020. Detecting Critical Bugs in SMT Solvers Using Blackbox Mutational Fuzzing. In Proceedings of the 28th ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering (ESEC/FSE 2020). Association for Computing Machinery, New York, NY, USA, 701–712. https://doi.org/10.1145/3368089.3409763.
+```
+
+* [Automatically Testing Implementations of Numerical Abstract Domains](https://doi.org/10.1145/3238147.3240464)
+
+```
+Alexandra Bugariu, Valentin Wüstholz, Maria Christakis, and Peter Müller. 2018. Automatically Testing Implementations of Numerical Abstract Domains. In Proceedings of the 33rd ACM/IEEE International Conference on Automated Software Engineering (ASE 2018). Association for Computing Machinery, New York, NY, USA, 768–778. https://doi.org/10.1145/3238147.3240464.
 ```
 
 ### Analyzer Unsoundness and Developer Practice
