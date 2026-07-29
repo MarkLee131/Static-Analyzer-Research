@@ -101,9 +101,10 @@
 // Sidebar navigation. Two levels, separated by weight and colour rather than by
 // size: the year is a quiet group label and the venues under it are the actual
 // navigation targets.
+// The theme pins the font size on .nav-list-item with !important, so both
+// levels have to be set on the link itself, where a specified value beats the
+// inherited one.
 .site-nav {
-  font-size: 0.7rem;
-
   // Year, and the standalone sections such as "All Papers" or "License".
   > .nav-list > .nav-list-item {
     margin-top: 0.55rem;
@@ -114,11 +115,11 @@
 
     > .nav-list-link {
       min-height: 0;
-      font-size: 0.55rem;
+      font-size: 0.75rem;
       font-weight: 600;
       line-height: 1.4;
-      color: $nav-child-link-color;
-      letter-spacing: 0.09em;
+      color: $body-text-color;
+      letter-spacing: 0.05em;
       text-transform: uppercase;
     }
 
@@ -129,10 +130,10 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      height: 1.3rem;
+      height: 1.55rem;
       padding: 0;
-      color: $nav-child-link-color;
-      opacity: 0.5;
+      color: $body-text-color;
+      opacity: 0.45;
 
       svg {
         width: 0.7rem;
@@ -143,6 +144,7 @@
 
   // Venues.
   .nav-list .nav-list .nav-list-link {
+    font-size: 0.62rem;
     line-height: 1.35;
   }
 }
